@@ -11,3 +11,4 @@ environs = {extras = ["django"],version = "*"}
 djangorestframework = "*"
 pillow = "*"
 gunicorn = "*"
+psycopg2 = "*"
