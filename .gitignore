@@ -1,0 +1,7 @@
+*.py[cod]
+__pycache__/
+staticfiles/
+media/
+.env
+*.sql*
+.vscode/
