@@ -37,6 +37,14 @@ AUTH_USER_MODEL = 'usuarios.User'
 CACHE_MIDDLEWARE_SECONDS = env.int("CACHE_SECONDS", 5)
 CORS_ORIGIN_ALLOW_ALL = True
 
+# Twilio
+PHONE_NUMBER = env.str('PHONE_NUMBER', default='')
+TW_SID = env.str('TW_SID', default='')
+TW_TOKEN = env.str('TW_TOKEN', default='')
+
+# Phone number field
+PHONENUMBER_DEFAULT_REGION = 'BR'
+
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
@@ -57,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'phonenumber_field',
     'rest_framework',
     'rest_framework.authtoken',
     'usuarios',
