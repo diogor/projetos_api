@@ -5,7 +5,7 @@ from usuarios.serializers import UserSerializer
 
 
 class ProjetoSerializer(serializers.ModelSerializer):
-    team = UserSerializer(many=True)
+    team = UserSerializer(many=True, required=False)
 
     class Meta:
         model = Projeto
